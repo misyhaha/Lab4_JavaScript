@@ -8,18 +8,15 @@
 
     <script>
         function checkInput(){
-            var userInput = document.getElementById("userInput").value;
-            if(isNaN(userInput)){
-                alert("Please insert a number!");
-            }else{
-                var number = parseFloat(userInput);
-
-                if(number<10){
+            let value = document.getElementById("userInput").value;
+            if(value<10){
                     alert("The number is lower than 10");
-                }else{
+            }else if (value>10){
                     alert("The number is higher than 10");
-                }
             }
-        };
+            else{
+                alert("Please enter a number!");
+            }
+            }
     </script>
 </body>
